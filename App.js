@@ -1,6 +1,6 @@
 // App.js
-import React, { useState, useEffect } from 'react';
-import './App.css';
+// React and ReactDOM are loaded via CDN in index.html
+const { useState, useEffect } = React;
 
 const BudgetTracker = () => {
   const [expenses, setExpenses] = useState([]);
@@ -427,4 +427,5 @@ const BudgetTracker = () => {
   );
 };
 
-export default BudgetTracker;
+// Render the application
+ReactDOM.render(<BudgetTracker />, document.getElementById('root'));
